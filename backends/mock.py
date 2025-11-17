@@ -1,4 +1,5 @@
-TODO_FILE = 'tudu.list'
+import config
+TODO_FILE = config.mock_file
 
 # Returns the content from the file
 def read_todo():

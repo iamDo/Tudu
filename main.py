@@ -1,14 +1,18 @@
 import argparse
+import config
 from backends import mock
 
 def add_command(title):
-    mock.todo_add(title)
+    if config.backend == 'mock':
+        mock.todo_add(title)
 
 def list_command():
-    mock.todo_list()
+    if config.backend == 'mock':
+        mock.todo_list()
 
 def done_command(title):
-    mock.todo_done(title)
+    if config.backend == 'mock':
+        mock.todo_done(title)
 
 
 def main():
