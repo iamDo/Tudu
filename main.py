@@ -1,14 +1,14 @@
 import argparse
-
+from backends import mock
 
 def add_command(title):
-    pass
+    mock.todo_add(title)
 
 def list_command():
-    pass
+    mock.todo_list()
 
 def done_command(title):
-    pass
+    mock.todo_done(title)
 
 
 def main():
